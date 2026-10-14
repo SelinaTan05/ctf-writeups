@@ -6,29 +6,33 @@ A collection of writeups, solve scripts, and lessons learned from past Capture t
 
 | Year | Competition | Writeups |
 | --- | --- | --- |
-| TBD | TBD | TBD |
+| 2026 | UMCS CTF | [View writeups](UMCS%20CTF/README.md) |
 
 ## Repository Structure
 
-Organize competitions by year, with a separate folder for each challenge:
+Organize writeups by competition and category, with a separate folder for each challenge:
 
 ```text
-writeups/
-└── YYYY/
-    └── competition-name/
-        └── challenge-name/
-            ├── README.md      # Walkthrough and explanation
-            ├── assets/        # Screenshots and challenge files
-            └── solve.py       # Solve script, if applicable
+UMCS CTF/
+├── README.md                  # Competition index
+└── Web/
+    └── Challenge Name/
+        ├── README.md          # Walkthrough and explanation
+        ├── images/
+        │   ├── image1.png
+        │   └── image2.png
+        └── solve.py           # Solve script, if available
 templates/
 └── writeup.md
 ```
 
 ## Adding a Writeup
 
-1. Create a challenge folder under `writeups/YYYY/competition-name/` using the actual year and competition name.
+1. Create a challenge folder under `Competition Name/Category/Challenge Name/`.
 2. Copy `templates/writeup.md` into the challenge folder as `README.md`.
-3. Add screenshots and supporting files to `assets/`, and include solve scripts alongside the writeup.
+3. Save screenshots in `images/` as `image1`, `image2`, and so on, preserving their file extensions. Restart numbering for each challenge. Include original challenge files in `attachments/` and solve scripts alongside the writeup, when available.
 4. Add a link to the competition in the index above.
+
+Credit the original solver in each writeup. Add a GitHub profile link only when the account is confirmed, and cite any external writeups used.
 
 In VS Code, press `Ctrl+Shift+V` while editing a Markdown file to preview it.
